@@ -1,0 +1,97 @@
+@font-face {
+	font-family: "LuciferSans";
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: local("Lucifer Sans Regular"), local("Lucifer-Sans-Regular"), url("../fonts/Lucifer Sans Regular.otf");
+}
+
+@font-face {
+	font-family: "LuciferSans";
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: local("Lucifer Sans Bold"), local("Lucifer-Sans-Bold"), url("../fonts/Lucifer Sans Bold.otf");
+}
+
+@font-face {
+	font-family: "LuciferSansSemiCondensed";
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: local("Lucifer Sans SemiCnd Bold"), local("Lucifer-Sans-SemiCnd-Bold"), url("../fonts/Lucifer Sans SemiCnd Bold.otf");
+}
+
+@font-face {
+	font-family: "LuciferSansSemiCondensed-reg";
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: local("Lucifer Sans SemiCnd Regular"), local("Lucifer-Sans-SemiCnd-Regular"), url("../fonts/Lucifer Sans SemiCnd Regular.otf");
+}
+
+
+*{
+  font-family: 'LuciferSans';
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+article > * + * {
+  margin-top: 1em;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}

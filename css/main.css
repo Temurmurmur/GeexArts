@@ -1,0 +1,474 @@
+@font-face {
+  font-family: "LuciferSans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Lucifer Sans Regular"), local("Lucifer-Sans-Regular"), url("../fonts/Lucifer Sans Regular.otf"); }
+
+@font-face {
+  font-family: "LuciferSans";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Lucifer Sans Bold"), local("Lucifer-Sans-Bold"), url("../fonts/Lucifer Sans Bold.otf"); }
+
+@font-face {
+  font-family: "LuciferSansSemiCondensed";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Lucifer Sans SemiCnd Bold"), local("Lucifer-Sans-SemiCnd-Bold"), url("../fonts/Lucifer Sans SemiCnd Bold.otf"); }
+
+@font-face {
+  font-family: "LuciferSansSemiCondensed-reg";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Lucifer Sans SemiCnd Regular"), local("Lucifer-Sans-SemiCnd-Regular"), url("../fonts/Lucifer Sans SemiCnd Regular.otf"); }
+
+* {
+  font-family: 'LuciferSans'; }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+ul[class],
+ol[class] {
+  padding: 0; }
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0; }
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5; }
+
+ul[class],
+ol[class] {
+  list-style: none; }
+
+a:not([class]) {
+  text-decoration-skip-ink: auto; }
+
+img {
+  max-width: 100%;
+  display: block; }
+
+article > * + * {
+  margin-top: 1em; }
+
+input,
+button,
+textarea,
+select {
+  font: inherit; }
+
+main {
+  overflow: hidden; }
+
+.top-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px 25px 35px 30px; }
+  .top-menu a {
+    text-decoration: none;
+    font-family: 'LuciferSans', Georgia, 'Times New Roman', Times, serif;
+    font-size: 21px;
+    text-transform: uppercase;
+    color: #000000; }
+
+.vertical-menu {
+  margin-top: 134px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  width: 5%;
+  max-height: 1067px;
+  box-sizing: border-box; }
+
+.vertical-menu__item {
+  display: inline-block;
+  width: min-content;
+  padding-right: 20px;
+  transform: rotate(-90deg);
+  text-decoration: none;
+  font-family: 'LuciferSans', Georgia, 'Times New Roman', Times, serif;
+  font-size: 32px;
+  text-transform: uppercase;
+  color: white;
+  text-shadow: black 1px 1px 0, black -1px -1px 0, black -1px 1px 0, black 1px -1px 0; }
+  .vertical-menu__item:after {
+    content: ' ';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: url("../img/multi-banner/Shape.svg") left top no-repeat;
+    width: 20px;
+    height: 20px;
+    transform: rotate(90deg); }
+
+.multi-banner {
+  display: flex;
+  max-width: 1920px;
+  margin: 0 auto;
+  margin-top: 134px; }
+
+.top-info {
+  position: relative;
+  margin-left: 130px;
+  width: 100%;
+  margin-right: 45px; }
+  .top-info__item-2 {
+    position: absolute;
+    left: 42%;
+    top: 22%;
+    z-index: 3; }
+  .top-info__item-3 {
+    position: absolute;
+    right: 0;
+    top: -120px; }
+  .top-info__label-top {
+    position: absolute;
+    top: 88px;
+    left: 100%;
+    width: 75%;
+    display: flex;
+    height: 211px; }
+
+.top-info__city {
+  font-family: 'LuciferSans', Georgia, 'Times New Roman', Times, serif;
+  font-size: 21px;
+  line-height: 275px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-left: -23px;
+  opacity: 0; }
+
+.top-info__year {
+  font-family: 'LuciferSans', Georgia, 'Times New Roman', Times, serif;
+  font-size: 16px;
+  line-height: 230px;
+  text-transform: uppercase;
+  color: #93845B;
+  opacity: 0; }
+
+.title {
+  font-family: 'LuciferSansSemiCondensed', Georgia, 'Times New Roman', Times, serif;
+  font-size: 400px;
+  line-height: 110px;
+  text-transform: uppercase;
+  color: #93845B; }
+
+.fly-title {
+  list-style: none;
+  display: flex;
+  z-index: 10;
+  background: none; }
+  .fly-title li {
+    font-family: 'LuciferSansSemiCondensed', Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    color: #93845B; }
+
+.top-info__title-bottom {
+  position: absolute;
+  top: 755px;
+  left: -2000px; }
+  .top-info__title-bottom li {
+    font-size: 400px;
+    line-height: 110px; }
+
+.card {
+  display: flex;
+  width: 469px;
+  background: #F7F7F7;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  padding: 20px 30px 30px; }
+
+.top-info__card {
+  z-index: 4;
+  position: absolute;
+  top: 90%;
+  left: calc(19% + 230px);
+  opacity: 0; }
+
+.card__shape {
+  position: absolute;
+  right: -20px;
+  top: -5px; }
+
+.card__label {
+  font-family: 'LuciferSansSemiCondensed-reg', Georgia, 'Times New Roman', Times, serif;
+  font-size: 15px;
+  line-height: 21px;
+  color: #B0B0B0;
+  margin: 0;
+  width: 89%; }
+
+.card__content {
+  font-family: 'LuciferSansSemiCondensed', Georgia, 'Times New Roman', Times, serif;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #000000; }
+
+.card__mainImg {
+  min-width: 154px;
+  height: 206px;
+  position: relative;
+  overflow: hidden; }
+  .card__mainImg img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover; }
+
+.card__info {
+  margin: -5px 0 -5px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  flex-basis: 100%; }
+
+.authors {
+  list-style: none;
+  left: -200px; }
+  .authors li {
+    margin-bottom: 25px; }
+
+.authors__label {
+  font-family: 'LuciferSansSemiCondensed', Georgia, 'Times New Roman', Times, serif;
+  font-size: 16px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #000000; }
+
+.authors__content {
+  font-family: 'LuciferSansSemiCondensed-reg', Georgia, 'Times New Roman', Times, serif;
+  font-size: 16px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #B0B0B0; }
+
+.middle {
+  margin-top: 120px;
+  display: flex; }
+
+.under-label {
+  margin: 0 auto;
+  margin-top: 181px;
+  width: 242px;
+  text-align: center;
+  font-family: 'LuciferSansSemiCondensed-reg', Georgia, 'Times New Roman', Times, serif;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #000000;
+  position: relative; }
+  .under-label:after {
+    content: '';
+    background: url("../img/multi-banner/divider.svg") left top no-repeat;
+    position: absolute;
+    left: 50%;
+    top: -105px;
+    display: block;
+    width: 2px;
+    height: 80px;
+    z-index: 3; }
+
+.more {
+  background: url("../img/more/oval.png") center top no-repeat;
+  min-height: 1198px;
+  margin-top: 59px;
+  position: relative; }
+
+.more__double {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 211px;
+  position: relative;
+  max-width: 1920px;
+  margin: 0 auto; }
+
+#animImg1 {
+  margin-left: -230px; }
+
+#animImg2 {
+  position: relative;
+  top: -230px;
+  opacity: 0.2; }
+
+.more__slider-wrap {
+  position: absolute;
+  top: 387px;
+  left: 25%;
+  width: 695px;
+  height: 499px;
+  background: #F7F7F7;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  overflow: hidden; }
+  .more__slider-wrap .tns-nav {
+    display: none; }
+  .more__slider-wrap .prev {
+    position: absolute;
+    bottom: 0;
+    left: 0; }
+  .more__slider-wrap .more__slider {
+    position: relative; }
+
+.tns-controls button:first-child {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  border: none;
+  background: url("../img/more/prev.svg") left top no-repeat;
+  width: 45px;
+  height: 45px;
+  outline: none; }
+  .tns-controls button:first-child:disabled {
+    display: none; }
+
+.tns-controls button:last-child {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  border: none;
+  background: url("../img/more/next.svg") left top no-repeat;
+  width: 45px;
+  height: 45px;
+  outline: none; }
+  .tns-controls button:last-child:disabled {
+    display: none; }
+
+.more__item {
+  padding: 25px 46px 28px 46px; }
+
+.more__item-wrap {
+  height: 430px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.more__paragraph {
+  font-family: 'LuciferSans', Georgia, 'Times New Roman', Times, serif;
+  font-size: 34px;
+  line-height: 44px;
+  color: #000000;
+  width: 88%; }
+  .more__paragraph span {
+    color: #B0B0B0; }
+
+.more__companies {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .more__companies h3 {
+    font-family: 'LuciferSansSemiCondensed', Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #000000;
+    flex-basis: 45%; }
+
+.more__card {
+  width: 418px;
+  position: absolute;
+  top: 78%;
+  opacity: 0; }
+
+.more__fly {
+  position: absolute;
+  left: 0; }
+  .more__fly li {
+    font-size: 240px;
+    line-height: 110px; }
+
+.underground {
+  height: 300px; }
+
+@media screen and (max-width: 1910px) {
+  .more__double {
+    padding: 0 45px; }
+  .top-info__title-bottom li {
+    font-size: 380px; } }
+
+@media screen and (max-width: 1700px) {
+  .more__fly {
+    left: -200px; }
+  .top-info__title-bottom li {
+    font-size: 333px; }
+  .top-info__title-bottom {
+    left: -136%; }
+  .top-info__label-top {
+    left: 79%; } }
+
+@media screen and (max-width: 1500px) {
+  .top-info__item-3 {
+    width: 24%; }
+  .top-info__item-1 {
+    width: 55%; }
+  .top-info__item-2 {
+    width: 59%; }
+  .top-info__label-top {
+    top: 27px;
+    left: 96%; }
+  .under-label {
+    margin-top: 201px; }
+  .top-info__title-bottom {
+    top: 555px;
+    left: -109%; }
+    .top-info__title-bottom li {
+      font-size: 250px; }
+  .title {
+    font-size: 250px; }
+  .top-info__city {
+    margin-left: -15px; }
+  .more__fly {
+    left: -444px; }
+  #animImg2 {
+    width: 52%; }
+  #animImg1 {
+    width: 43%; }
+  .more__slider-wrap {
+    top: 283px; }
+  .more__card {
+    top: 67%;
+    left: -186px; } }
+
+@media screen and (max-width: 1300px) {
+  .top-info__title-bottom {
+    top: 475px;
+    left: -136%; }
+  .more__fly {
+    left: -520px;
+    top: 94%; }
+  .top-info__city {
+    line-height: 241px; }
+  .top-info__year {
+    line-height: 198px; }
+  .under-label {
+    margin-top: 153px; } }
